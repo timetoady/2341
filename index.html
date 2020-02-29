@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,168 +8,208 @@
 
     <title>Format Testing</title>
 </head>
+
 <body>
-<header>
-    <h1>Use-case tests</h1>
-</header>
-
-<main>
-<h2>Audio</h2>
-
-    <h3>MP3 testing</h3>
-    <figure>
-        <figcaption>EXTRA MAGIC HOUR mp3 44100 Hz 128b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/01 - EXTRA MAGIC HOUR_44100Hz_128kbps.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>3997 KB</p>
-    <h4>Assessment</h4>
-    <p>It's an MP3, base quality has no issue with play.</p>
-
-    <figure>
-        <figcaption>EXTRA MAGIC HOUR mp3 48000 Hz 192b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/01 - EXTRA MAGIC HOUR_48000Hz_192kbps.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>5992 KB</p>
-    <h4>Assessment</h4>
-    <p>Higher quality MP3</p>
-
-    <figure>
-        <figcaption>Evolution "Original Mix" mp3 44100 Hz 128b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/05 evolution _Original Mix_ 1_44100Hz_128kbps.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>4406 KB</p>
-    <h4>Assessment</h4>
-    <p>It's an MP3, base quality has no issue with play.</p>
-
-    <figure>
-        <figcaption>Evolution "Original Mix" mp3 48000 Hz 192b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/05 evolution _Original Mix_ 1_44100Hz_128kbps.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>6608 KB</p>
-    <h4>Assessment</h4>
-    <p>Higher quality MP3</p>
+    <header>
+        <h1>Use-case tests</h1>
+    </header>
 
 
+    <main>
+        <div>
+            <h2>Audio</h2>
 
-    <h3>FLAC testing</h3>
-    <figure>
-        <figcaption>EXTRA MAGIC HOUR FLAC 44100 Hz 128b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/01 - EXTRA MAGIC HOUR.flac">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>34802</p>
-    <h4>Assessment</h4>
-    <p>FLAC files seem to have several issues. They play on a destop browser, but don't seem to show bitrate, total time, etc.</p>
+            <p>Site was tested on PC, Android (Pixel 3XL), Chrombook, and iOS (iPad 4), via Chrome and Safari browsers
+                as
+                applicable.</p>
 
-    <figure>
-        <figcaption>Evolution "Original Mix" FLAC 48000 Hz 192b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/05 evolution _Original Mix_48000Hz_192kbps.flac">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>39240 KB</p>
-    <h4>Assessment</h4>
-    <p>Higher quality FLAC.</p>
+            <h3>MP3 testing</h3>
+        </div>
 
-    <h3>OGG testing</h3>
+        <div class="zebra">
+            <figure>
+                <figcaption>1. EXTRA MAGIC HOUR mp3 44100 Hz 128b/s:</figcaption>
+                <audio controls src="/audio_assets/01 - EXTRA MAGIC HOUR_44100Hz_128kbps.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>3997 KB</p>
+            <h4>Assessment</h4>
+            <p>It's an MP3, base quality has no issue with play bascially across all platforms. The wide acceptance of
+                the
+                type clearly showed.</p>
+        </div>
 
-    <figure>
-        <figcaption>EXTRA MAGIC HOUR OGG 44100 Hz 128b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/01 - EXTRA MAGIC HOUR_Vorbis.ogg">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>4601</p>
-    <h4>Assessment</h4>
-    <p>OGG is meant for browsers, and plays smoothly.</p>
+        <div>
+            <figure>
+                <figcaption>2. EXTRA MAGIC HOUR mp3 48000 Hz 192b/s:</figcaption>
+                <audio controls src="/audio_assets/01 - EXTRA MAGIC HOUR_48000Hz_192kbps.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>5992 KB</p>
+            <h4>Assessment</h4>
+            <p>Higher quality MP3 still played with equal ability, but did not seem to effect sound greatly on mobile
+                platforms. Only PC digital output to a Yamaha receiver made a difference, and it was not large.</p>
+        </div>
 
-    <figure>
-    <figcaption>Evolution "Original Mix" OGG 44100 Hz 128b/s:</figcaption>
-    <audio
-        controls
-        src="/audio_assets/05 evolution _Original Mix_.ogg">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-<h4>Size</h4>
-<p>4597 KB</p>
-<h4>Assessment</h4>
-<p>It's an MP3, base quality has no issue with play.</p>
+        <div class="zebra">
+            <figure>
+                <figcaption>3. Evolution "Original Mix" mp3 44100 Hz 128b/s:</figcaption>
+                <audio controls src="/audio_assets/05 evolution _Original Mix_ 1_44100Hz_128kbps.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>4406 KB</p>
+            <h4>Assessment</h4>
+            <p>Second song used for verification, with a slightly deeper range than EXTRA MAGIC HOUR. As an MP3, the
+                loss of
+                clarity was felt more clearly with this one, but that loss seemed pretty consistant across platforms,
+                with
+                only slight variations in how the sound was conveyed.</p>
+        </div>
 
-<figure>
-<figcaption>Evolution "Original Mix" OGG 48000 Hz 192b/s:</figcaption>
-<audio
-    controls
-    src="/audio_assets/05 evolution_Original Mix_48000Hz_192kbps_Vorbis.ogg">
-        Your browser does not support the
-        <code>audio</code> element.
-</audio>
-</figure>
-<h4>Size</h4>
-<p>4601 KB</p>
-<h4>Assessment</h4>
-<p>Higher quality OGG</p>
+        <div>
+            <figure>
+                <figcaption>4. Evolution "Original Mix" mp3 48000 Hz 192b/s:</figcaption>
+                <audio controls src="/audio_assets/05 evolution _Original Mix_ 1_44100Hz_128kbps.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>6608 KB</p>
+            <h4>Assessment</h4>
+            <p>Higher quality MP3 of above, simliar results over all. Likely not worth the extra KB.</p>
+        </div>
 
-    <h3>AIFF testing</h3>
+        <div>
+            <h3>FLAC testing</h3>
+        </div>
 
-    <figure>
-        <figcaption>EXTRA MAGIC HOUR AIFF 44100 Hz 128b/s:</figcaption>
-        <audio
-            controls
-            src="/audio_assets/01 - EXTRA MAGIC HOUR.aif">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure>
-    <h4>Size</h4>
-    <p>Put file size here</p>
-    <h4>Assessment</h4>
-    <p>AIFF files do not play on Chrome browsers.</p>
-    
+        <div class="zebra">
 
-    <h2>Video</h2>
-</main>
-<footer>
-    Adam Andreason stuff
-</footer>
-    
+            <figure>
+                <figcaption>1. EXTRA MAGIC HOUR FLAC 44100 Hz 128b/s:</figcaption>
+                <audio controls src="/audio_assets/01 - EXTRA MAGIC HOUR.flac">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>34802</p>
+            <h4>Assessment</h4>
+            <p>Like the MP3, the FLAC was the other format that successfully played across all platforms. However, FLAC
+                files seem to have several issues. They were unable to show total play time on any platform from the
+                browser, and starting and stopping playback was sometimes a bit sluggish. The quality uptick that should
+                be
+                more noticable for a lossless file, but was less apparent on the Android phone, most on the PC.</p>
+        </div>
+
+        <div>
+            <figure>
+                <figcaption>2. Evolution "Original Mix" FLAC 48000 Hz 192b/s:</figcaption>
+                <audio controls src="/audio_assets/05 evolution _Original Mix_.flac">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>39240 KB</p>
+            <h4>Assessment</h4>
+            <p>Higher quality FLAC. Simliar results as above, although it was a bit more sluggish to play on mobile
+                divices,
+                especially via Safari.</p>
+        </div>
+
+        <div>
+            <h3>OGG testing</h3>
+        </div>
+
+
+        <div class="zebra">
+            <figure>
+                <figcaption>1. EXTRA MAGIC HOUR OGG 44100 Hz 128b/s:</figcaption>
+                <audio controls src="/audio_assets/01 - EXTRA MAGIC HOUR_Vorbis.ogg">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>4601</p>
+            <h4>Assessment</h4>
+            <p>OGG was not workable on iOS/iPad 4, on either browser. It did, however, play without issue on Android and
+                PC.
+                In fact, it probably had the quickest loading time, and the smoothest stops and starts.</p>
+        </div>
+
+        <div>
+            <figure>
+                <figcaption>2. Evolution "Original Mix" OGG 44100 Hz 128b/s:</figcaption>
+                <audio controls src="/audio_assets/05 evolution _Original Mix_.ogg">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>4597 KB</p>
+            <h4>Assessment</h4>
+            <p>Same results as above.</p>
+        </div>
+
+        <div class="zebra">
+            <figure>
+                <figcaption>3. Evolution "Original Mix" OGG 48000 Hz 192b/s:</figcaption>
+                <audio controls src="/audio_assets/05 evolution_Original Mix_48000Hz_192kbps_Vorbis.ogg">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>4601 KB</p>
+            <h4>Assessment</h4>
+            <p>Higher quality OGG did not sound much different, and wasn't much bigger, either, so likely not worth
+                bothering.</p>
+        </div>
+
+        <div>
+            <h3>AIFF testing</h3>
+        </div>
+
+        <div>
+            <figure>
+                <figcaption>1. EXTRA MAGIC HOUR AIFF 44100 Hz 128b/s:</figcaption>
+                <audio controls src="/audio_assets/01 - EXTRA MAGIC HOUR.aif">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <h4>Size</h4>
+            <p>44057 KB</p>
+            <h4>Assessment</h4>
+            <p>AIFF files did not play on anything but iOS, and then only via Chrome. Safari did not work on all platforms,
+                nor did the AIFF file work on any platform but the iPad 4. The usability of this file type on browser
+                would seem limited.</p>
+
+        </div>
+
+        <div>
+            <h2>Video</h2>
+            <p>Next time...</p>
+        </div>
+
+    </main>
+
+    <footer>
+        Adam Andreason 2020
+    </footer>
+
 </body>
+
 </html>
