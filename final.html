@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link href="finalstyle.css" rel="stylesheet">
+    <title>Japanese Bands</title>
+</head>
+
+<body>
+
+    <main>
+
+
+
+        <div class="slider" id="slide">
+
+            <div>
+
+
+                <picture>
+                    <source srcset="/image_assets/iam4CoverMobile.jpg" media="(max-width: 28.12rem)">
+                    <source srcset="/image_assets/iamDesktopHero2.jpg"
+                        media="(min-width: 28.12rem) and (max-width: 60rem)">
+                    <source srcset="/image_assets/ayumi1.jpg" media="(min-width: 60rem)">
+                    <img src="/image_assets/iamDesktopHero2.jpg" alt="I am...">
+                </picture>
+
+                <div class="withAudio">
+                    <div class="sliderDiv">
+                        <h2>Artist: Hamazaki Ayumi</h2>
+                        <h5>Song: Evolution Remix</h5>
+                        <h5>Album: I am...</h5>
+                        <p>During the height of her career, Hamasaki was dubbed the "Empress of J-pop" because of her
+                            popularity in Japan and Asia. A noted stylist and lyricist, she has sold over 80 million
+                            records, making her the best-selling Japanese solo artist of all time.</p>
+                    </div>
+
+
+                    <audio controls src="/audio_assets/05 evolution _Original Mix_ 1_44100Hz_128kbps.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </div>
+
+            </div>
+
+            <div>
+                <video poster="/image_assets/bless4CoverDesktop.jpg" id="player" playsinline controls>
+
+                    <source
+                        src="http://timetoady.com/JPop/%5BAmagi%20Brilliant%20Park%5D%5BExtra%20Magic%20Hour%5D%5BAKINO%20with%20bless4%5D%5BPV%5D.mp4"
+                        type="video/mp4" />
+                </video>
+                <div class="sliderDiv" id="videoDiv">
+                    <h2>Bless4</h2>
+                    <h5>EXTRA MAGIC HOUR</h5>
+                    <p>Bless4 is a four-sibling group based out of Kawasaki, Japan, but most of it's members were born
+                        in Provo, UT while their father attended school. The lead vocalalist, Akino, also has a solo career, having sung opening songs to several different
+                        animes, starting with Genesis of Aquarion in 2005.</p>
+
+                        <p>EXTRA MAGIC HOUR was the opening to the anime adaptation of the light novel series by Shoji Gatoh (of "Full Metal Panic!" fame), "Amagi Brilliant Park." The song also has an English-language <a href="https://www.youtube.com/watch?v=xb83OBdn50Q">International Edition</a></p>
+                </div>
+            </div>
+
+
+            <div>
+                <picture>
+                    <source srcset="/image_assets/initial-d-wallpaper.jpg" media="(max-width: 28.12rem)">
+                    <source srcset="/image_assets/intialDHero.jpg" media="(min-width: 28.12rem)">
+                    <img src="/image_assets/intialDHero.jpg" alt="Initial D Final Best Collection">
+                </picture>
+
+                <div class="withAudio">
+                    <div class="sliderDiv">
+                        <h2>M.O.V.E.</h2>
+                        <h5>Initial D: Final Best Collection</h5>
+                        <p>Everything in the game is complete, including the intro and endings. Release 1.02 fixes bugs
+                            reported
+                            in the 2011 complete release. Have fun!</p>
+                    </div>
+
+                    <audio controls src="/audio_assets/DOGFIGHT.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Plans:  
+Black background
+No title, no navbar, one line text footer
+Long format slider with image, playable music, and text
+
+
+
+-->
+
+
+    </main>
+
+
+    <footer>
+
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 200,
+                cssEase: 'ease-in',
+                autoplay: true,
+                autoplaySpeed: 300000
+            });
+        });
+    </script>
+    <script src="/code.js"></script>
+</body>
+
+</html>
