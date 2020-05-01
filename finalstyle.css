@@ -25,6 +25,11 @@ body{
 .slider p, h2, h5{
     color: white;
     margin-top: 0;
+    margin-bottom: .2rem;
+}
+
+.slider p{
+   margin-top: 1rem; 
 }
 
 .sliderDiv {
